@@ -1,0 +1,62 @@
+html {
+  font-size: 62.5%;
+  user-select: none;
+}
+
+body
+{
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.board{
+border-radius: 3rem;
+background-image: linear-gradient(to top, #8fd9d9 0%, #b28ce0 100%);
+text-align: center;
+margin-top: 4rem;
+display:flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+}
+
+h1 {
+  font-family: "permanent marker", arial, helvetica, serif;
+  font-size: 8rem;
+  color: rgb(37, 37, 37);
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+#app
+{
+  display: grid;
+  grid-template-columns: repeat(4, 20rem);
+  grid-template-rows: repeat(4, 20rem);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding: 5rem;
+  border-radius: 2rem;
+  align-content: center;
+}
+img,
+
+.card, .border
+{
+  width: 17rem;
+  height: 17rem;
+  border-radius: 1.5rem;
+}
+
+h2 {
+  font-family: "permanent marker", arial, helvetica, serif;
+  font-size: 6rem;
+  color: rgb(235, 235, 235);
+  margin-top: 2rem;
+  margin-bottom: 0;
+}

@@ -1,0 +1,16 @@
+ export const model = {
+    appElement: [],
+    imgElements: [],
+    clickedId: "",
+    id1Prefix: "",
+    id2Prefix: "",
+    firstSelectedImg: null,
+    secondSelectedImg: null,
+    isEqual: true,
+    totalFoundPair: 0,
+    disableClickGlobal: false,
+    disabledSquares: new Set(),
+    elementsToSet: [],
+     shuffledElements: [],
+     totalCardIds: 16,
+}
