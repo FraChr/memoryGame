@@ -20,18 +20,6 @@ function updateGame() {
         turnWrongPair(model.secondSelectedImg);
         model.isEqual = true;
     }
-
-    console.log("firstSelectedImg", model.firstSelectedImg);
-    console.log("secondSelectedImg", model.secondSelectedImg);
-    console.log("id1Prefix", model.id1Prefix);
-    console.log("id2Prefix", model.id2Prefix);
-    console.log("clickedId", model.clickedId);
-    console.log("totalFoundPair", model.totalFoundPair);
-    console.log("disableClick", model.disableClickGlobal);
-    console.log("disabledSquares", model.disabledSquares);
-    console.log("disabledSquares size", model.disabledSquares.size);
-    console.log("\n\n");
-
 }
 
 function updateImgSource(img) {
