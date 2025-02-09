@@ -9,7 +9,6 @@ function drawGame() {
     model.appElement.innerHTML = model.shuffledElements.join("");
 }
 
-// TODO: - Refactor!
 function updateGame() {
     if (model.firstSelectedImg.id === model.clickedId) {
         updateImgSource(model.firstSelectedImg);
@@ -21,16 +20,6 @@ function updateGame() {
         turnWrongPair(model.secondSelectedImg);
         model.isEqual = true;
     }
-
-    console.log("firstSelectedImg", model.firstSelectedImg);
-    console.log("secondSelectedImg", model.secondSelectedImg);
-    console.log("id1Prefix", model.id1Prefix);
-    console.log("id2Prefix", model.id2Prefix);
-    console.log("clickedId", model.clickedId);
-    console.log("totalFoundPair", model.totalFoundPair);
-    console.log("disableClick", model.disableClickGlobal);
-    console.log("disabledSquares", model.disabledSquares);
-
 }
 
 function updateImgSource(img) {
@@ -52,7 +41,6 @@ function init() {
     listener();
 }
 
-// TODO: - Look into refactoring;
 function equalityImgCheck() {
     model.disableClickGlobal = true;
     // timeOutLength set in ms;
@@ -72,9 +60,8 @@ function equalityImgCheck() {
             updateGame();
         }, timeOutLength)
     }
-
-
 }
+
 function resetSharedVars() {
     model.id1Prefix = "";
     model.id2Prefix = "";
